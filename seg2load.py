@@ -206,9 +206,3 @@ def seg2_load(filename):
         header['tr'][key] = np.array(list(map(var_fun,
                                      [td[key] for td in trace_descriptors])))
     return trace_array, header
-
-
-if __name__ == "__main__":
-    path = '/home/nathan/Documents/U of T Courses/4th Year/ESS492/Deep River Seismic ' \
-            'Data/2018-08-27/347.dat'
-    seg2_load(path)
