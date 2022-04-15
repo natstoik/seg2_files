@@ -17,8 +17,10 @@ The header is a nested dictionary, with the following structure:
 
 header
 * Key:'tr' Value: dictionary of trace headers
-    * Key: trace header field e.g. 'SAMPLE_INTERVAL' for trace timestep (more are detailed in SEG2             specification), Value: List of values of the key field for each trace in the file in order
-* Key: 'rec' Value: Dictionary with field names as keys (found in SEG2 standard) containing information                     about the entire recording (file)
+    * Key: trace header field e.g. 'SAMPLE_INTERVAL' for trace timestep (more are detailed on page 7 of the SEG2 specification), Value: List of values of the key field for each trace in the file in order
+* Key: 'rec' Value: Dictionary with field names as keys (found in SEG2 standard, pages 8-11) containing information                     about the entire recording (file)
+
+For an explanation of the field names (keys for the second level in the dictionary) see pages 7-11 of the SEG2 standard: https://www.seg.org/Portals/0/SEG/News%20and%20Resources/Technical%20Standards/seg_2.pdf
 
 As an example, to get the timestep (_dt_) between samples of the 3rd trace in a file, you can use:
 ```py
