@@ -10,7 +10,7 @@ from seg2_files.seg2load import seg2_load
 ```
 Next, load the trace data as a numpy array with traces as columns, and header as a dictionary from a SEG2 file:
 ```py
-traces, header = seg2load('example_file.seg2')
+traces, header = seg2_load('example_file.seg2')
 ```
 
 The header is a nested dictionary, with the following structure:
